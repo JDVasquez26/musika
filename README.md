@@ -1,10 +1,9 @@
 # Project musika
 React.js Music Application. 
+https://musikaa.netlify.app/
 
-## System Requirements
 
-To get started with development, you need to install few tools
-
+## Requirements
 1. `git` version 2.13.1 or higher. Download [git](https://git-scm.com/downloads) if you don't have it already.
 
 2. `node` version 16.15.1 or higher. Download [node](https://nodejs.org/en/download/) if you don't have it already.
