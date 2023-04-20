@@ -14,7 +14,7 @@ const AroundYou = () => {
   // console.log(country);
 
   useEffect(() => {
-    axios.get(process.env.GEO_API_KEY)
+    axios.get(process.env.REACT_APP_GEO_API_KEY)
       .then((res) => setCountry(res?.data?.country?.iso_code))
       .catch((err) => console.log(err))
       .finally(() => setLoading(false));
