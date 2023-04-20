@@ -16,7 +16,7 @@ export const shazamCoreApi = createApi({
     // Allows you to inject headers on every request. You can specify headers at the endpoint level, but you'll typically want to set common headers like authorization here
     // Additionally, it provides access to extra, endpoint, type, and forced to unlock more granular conditional behaviors.
     prepareHeaders: (headers) => {
-      headers.set('X-RapidAPI-Key', process.env.REACT_APP_RAPID_API_KEY);
+      headers.set('X-RapidAPI-Key', import.meta.env.VITE_SHAZAM_CORE_RAPID_API_KEY);
       // returning headers after setting a specific property
       return headers;
     },
