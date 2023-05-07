@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 
 import { Searchbar, Sidebar, MusicPlayer, TopPlay } from './components';
+import StarsCanvas from './components/canvas/Stars';
 import { ArtistDetails, TopArtists, AroundYou, Discover, Search, SongDetails, TopCharts } from './pages';
 
 const App = () => {
@@ -10,7 +11,7 @@ const App = () => {
   return (
     <div className="relative flex">
       <Sidebar />
-      <div className="flex-1 flex flex-col bg-gradient-to-br from-black to-[#86126b]">
+      <div className="relative z-0 flex-1 flex flex-col bg-gradient-to-br from-black to-[#86126b]">
         <Searchbar />
 
         <div className="px-6 h-[calc(100vh-72px)] overflow-y-scroll hide-scrollbar flex xl:flex-row flex-col-reverse">
@@ -29,6 +30,7 @@ const App = () => {
             <TopPlay />
           </div>
         </div>
+        <StarsCanvas />
       </div>
 
       {activeSong?.title && (
